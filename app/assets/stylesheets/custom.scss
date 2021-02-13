@@ -1,3 +1,7 @@
+h1, h2 {
+  font-weight: 100;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -12,11 +16,11 @@
   padding-top: 160px;
   h1 {
     font-size: 60px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   h2 {
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -25,12 +29,12 @@
 }
 
 .signlog {
+    font-weight: 100;
     padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 3em 0;
     font-weight: bold;
     color: #fff;/*文字色*/
     font-size: 20px;
     border: solid 3px #adb5bd;/*線*/
     border-radius: 10px;/*角の丸み*/
 }
-
