@@ -1,14 +1,15 @@
 class UsersController < ApplicationController
   def new
-　　@user = User.new
+    @user = User.new
   end
-   
+
   def create
     @user = User.new(name: params[:user][:name], email: params[:user][:email])
     if @user.save
-       redirect_to root_path
+      redirect_to root_path, seccess: '登録が完了しました'
     else
-       render :new
+      flash.now[:danger] = "登録に失敗しました"
+      render :new
     end  
   end
 end

@@ -20,7 +20,7 @@ h1, h2 {
   }
   h2 {
     font-size: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
   }
 }
 
@@ -28,13 +28,14 @@ h1, h2 {
   color: #fff;
 }
 
-.signlog {
+.btn-white, .btn-black {
     font-weight: 100;
-    padding: 0.5em 1em;
-    margin: 3em 0;
+    padding: 0.5em 0.5em;
+    margin: 1em 0;
     font-weight: bold;
     color: #fff;/*文字色*/
     font-size: 20px;
     border: solid 3px #adb5bd;/*線*/
     border-radius: 10px;/*角の丸み*/
 }
+

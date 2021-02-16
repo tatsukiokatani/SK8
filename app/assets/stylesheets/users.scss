@@ -1,5 +1,9 @@
-.form-control {
+.-control {
   height: 45px;
+}
+
+.btn-black {
+  color: #000;
 }
 
 .users-new-wrapper {
@@ -13,10 +17,17 @@
   background-color: #464646;
 
   .users-new-container {
-    padding-top: 220px;
+    padding-top: 160px;
 
     .form-group {
       margin-bottom: 20px;
     }
   }
+}
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
