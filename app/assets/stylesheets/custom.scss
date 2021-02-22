@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 .text-1{
-  padding-top: 160px;
+  padding-top: 140px;
   h1 {
     font-size: 60px;
     margin-bottom: 5px;
@@ -30,12 +30,36 @@ h1, h2 {
 
 .btn-white, .btn-black {
     font-weight: 100;
-    padding: 0.5em 0.5em;
-    margin: 1em 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: bold;
     color: #fff;/*文字色*/
+    background: rgba(150, 150, 150, 0.40);
     font-size: 20px;
     border: solid 3px #adb5bd;/*線*/
     border-radius: 10px;/*角の丸み*/
+}
+
+.btn-block.btn-black {
+    font-weight: 100;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: #fff;/*文字色*/
+    background: rgba(150, 150, 150, 0.40);
+    font-size: 20px;
+    border: solid 3px #adb5bd;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.navbar-brand {
+    padding: 0px;
+    margin-top: 0px;
+    width: 7vw;
+    height: 7vh;
+}
+
+.img {
+  height: 40px;
 }
 
