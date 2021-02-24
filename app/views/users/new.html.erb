@@ -5,6 +5,16 @@
         <h1 class="text-center text-white">Sign Up</h1>
         <%= form_for @user do |f| %>
           <div class="form-group">
+            <% if @user.icon? %>
+              <%= icon_tag @user.icon.thumb.url, class: "user-icon" %>
+            <% else %>
+              <%= icon_tag "default.jpg", alt: "user-icon", size: "200", class: "user-icon" %>
+            <% end %>
+              <button type="button" class="btn btn-outline-secondary rounded-pill">
+                <%= f.file_field :icon, accept: 'image/jpeg,image/gif,image/png', class: "image-select-btn" %>
+              </button>
+          </div>        
+          <div class="form-group">
             <%= f.label :name, class: 'text-white' %>
             <small class="caution">(25文字以下)</small>
             <%= f.text_field :name, class: 'form-control' %>
