@@ -9,6 +9,7 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 8, maximum: 32}, format: { with: VALID_PASSWORD_REGEX}
   
   validates :icon, presence: true
+  
   mount_uploader :icon, IconUploader
   
   has_many :topics

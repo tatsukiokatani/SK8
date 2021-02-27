@@ -37,6 +37,30 @@
 }
 
 /*アイコン*/
-.user-icon {
-  border-radius: 100px;
+.icon {
+  border-radius: 50%;  
+  width: 140px;
+  height: 140px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-size: cover;
+  background-position: center center;  
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.homeimage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }

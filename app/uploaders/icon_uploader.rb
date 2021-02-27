@@ -1,22 +1,11 @@
 class IconUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  version :thumb do
-    process :resize_to_fill => [50, 50, gravity = ::Magick::CenterGravity]
-  end  
-  
-  def auto
-    manipulate! do|icon|
-      icon.auto_orient
-    end
-  end
 
-  process :auto
   
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
-
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir
@@ -24,12 +13,12 @@ class IconUploader < CarrierWave::Uploader::Base
   end
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
-  # def default_url(*args)
+  #def default_url(*args)
   #   # For Rails 3.1+ asset pipeline compatibility:
   #   # ActionController::Base.helpers.asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
-  #
+     #"default.jpg"
   #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
-  # end
+  #end
 
   # Process files as they are uploaded:
   # process scale: [200, 300]
@@ -46,9 +35,7 @@ class IconUploader < CarrierWave::Uploader::Base
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
   # def extension_whitelist
-  def extension_whitelist
-    %w(jpg jpeg png)
-  end
+
   
   def size_range
     1..10.megabytes
